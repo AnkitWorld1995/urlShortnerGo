@@ -7,7 +7,7 @@ import (
 )
 
 type UrlHandler struct {
-	svc service.UrlShortnerService
+	Service service.UrlShortnerService
 }
 
 func (h *UrlHandler) GetUrl(w http.ResponseWriter, r *http.Request) {
