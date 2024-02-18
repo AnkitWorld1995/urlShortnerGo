@@ -5,12 +5,12 @@ import (
 	"github.com/urlShortnerGo/pkg/dto"
 )
 
-type urlService struct {
+type UrlService struct {
 	repo domain.UrlRepo
 }
 
-func NewUrlService(r domain.UrlRepo) *urlService {
-	return &urlService{
+func NewUrlService(r domain.UrlRepo) *UrlService {
+	return &UrlService{
 		repo: r,
 	}
 }
@@ -18,8 +18,8 @@ func NewUrlService(r domain.UrlRepo) *urlService {
 type UrlShortnerService interface {
 }
 
-func (svc *urlService) Get(req *dto.GetUrl) {
+func (svc *UrlService) Get(req *dto.GetUrl) {
 	// req.LongUrl
 }
 
-func (svc *urlService) Post() {}
+func (svc *UrlService) Post() {}
